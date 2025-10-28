@@ -1,0 +1,86 @@
+/* === Page shell === */
+.projects-page {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 32px 20px;
+}
+
+/* === Title === */
+.projects-title {
+  font-size: 32px;
+  font-weight: 800;
+  margin: 0 0 16px;
+  color: #d5c299;
+}
+
+/* === Grid of cards === */
+.projects-grid {
+  display: grid;
+  gap: 16px;
+}
+
+/* === Individual project card === */
+.project-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 16px;
+  background: #ffffff;
+}
+
+/* === Row layout: image left, text right === */
+.project-card-inner {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+/* === Thumbnail image === */
+.project-image {
+  width: 180px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+  display: block;
+}
+
+/* === Right text column === */
+.project-details {
+  flex: 1;
+}
+
+/* === Card text === */
+.project-card-title {
+  margin: 0 0 8px;
+  font-size: 20px;
+  color: #111827;
+}
+.project-card-blurb {
+  font-size: 15px;
+  color: #334155;
+}
+
+/* === Link + hover states === */
+.project-card-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+.project-card:hover {
+  border-color: #d5c299;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+}
+.project-card-link:hover .project-card-title {
+  color: #d5c299;
+}
+
+/* === Responsive (stack on small screens) === */
+@media (max-width: 640px) {
+  .project-card-inner {
+    flex-direction: column;
+  }
+  .project-image {
+    width: 100%;
+    height: 180px;
+  }
+}

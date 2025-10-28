@@ -1,0 +1,70 @@
+/* === Home page container === */
+.home-page { 
+  max-width: 1080px; 
+  margin: 0 auto; 
+  padding: 96px 20px 32px; /* extra breathing room at top */
+  color: #fff; 
+}
+
+/* === Hero layout (photo + intro + illustration) === */
+.home-hero { 
+  display: flex; 
+  align-items: center; 
+  gap: 24px; 
+  flex-wrap: wrap; 
+}
+
+/* === Profile photo === */
+.home-photo {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: 70% center;
+  border: 3px solid #d5c299;
+}
+
+/* === Intro text block === */
+.home-intro { 
+  flex: 1; 
+  min-width: 260px; 
+}
+.home-title { 
+  font-size: 32px; 
+  font-weight: 800; 
+  margin: 0 0 12px; 
+  color: #d5c299; 
+}
+.home-intro p { 
+  font-size: 16px; 
+  line-height: 1.6; 
+  margin: 0 0 12px; 
+}
+
+/* === Big greeting headline === */
+.home-greeting {
+  font-size: 48px;
+  font-weight: 900;
+  margin: 0 0 32px; /* increased spacing under greeting */
+  color: #d5c299;
+}
+
+/* === Blurb paragraph (wider, comfortable reading) === */
+.home-blurb {
+  max-width: 56ch;
+}
+
+/* === Right-side illustration (SVG or image) === */
+.home-illustration {
+  width: 320px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+}
+
+/* === Responsive tweaks === */
+@media (max-width: 640px) {
+  .home-greeting { font-size: 36px; }
+  .home-illustration { width: 220px; margin-top: 12px; }
+}
