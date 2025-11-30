@@ -20,7 +20,7 @@ export default function Home() {
           <div className="home-actions">
             <Link className="home-cta" to="/about">Get to know me better </Link>
           </div>
-          <p>CI/CD test update from GitHub.</p>
+          <p>CI/CD test update from GitHubb.</p>
         </div>
 
         {/* Right-side illustration */}
@@ -30,3 +30,4 @@ export default function Home() {
   );
 
 }
+
