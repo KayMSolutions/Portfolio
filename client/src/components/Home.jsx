@@ -23,7 +23,7 @@ export default function Home() {
         </div>
 
         {/* Right-side illustration */}
-        <img src="/focused.svg" alt="Focused illustration" className="home-illustration" />
+        <img src="/focused.webp" alt="Focused illustration" className="home-illustration" />
       </section>
     </main>
   );
